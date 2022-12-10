@@ -55,7 +55,7 @@ class Client:
         async with self._session.get(f"https://tl3.shadowtree-software.se/TL3BackEnd/rest/user2/public/search?result={result}&page={page}&query={query}", verify_ssl=False) as response:
             users = await response.json()
 
-        users = [User(self, user) for user in users]
+        users = [await self.get_details_for_user(User(self, user).object_id) for user in users]
         return users
 
     def get_map_thumbnail_url(self, map_id: int) -> str:

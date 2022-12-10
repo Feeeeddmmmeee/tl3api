@@ -10,7 +10,7 @@ classifiers = [
 
 setup(
     name="tl3api",
-    version="1.0.0",
+    version="1.1.0",
     license="MIT",
     author="Feeeeddmmmeee",
     packages=find_packages(exclude="tests"),
