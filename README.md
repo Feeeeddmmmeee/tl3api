@@ -1,10 +1,10 @@
 # tl3api
-
+![PyPI](https://img.shields.io/pypi/v/tl3api) ![PyPI - Python Version](https://img.shields.io/pypi/pyversions/tl3api) ![PyPI - Downloads](https://img.shields.io/pypi/dm/tl3api) ![PyPI - License](https://img.shields.io/pypi/l/tl3api)
 A basic, asynchronous wrapper for the API of Traffic Lanes 3 / Intersection Controller written in Python.
 
 ## Installation
 
-tl3api was tested on python 3.9, although it should work wither earlier versions too. The recommended and easiest way to install tl3api is (pip)[https://pypi.org/project/pip/]
+tl3api was tested on python 3.9, although it should work wither earlier versions too. The recommended and easiest way to install tl3api is [pip](https://pypi.org/project/pip/)
 ```sh
 pip install tl3api
 ```
@@ -16,7 +16,7 @@ import tl3api
 import aiohttp
 
 async with tl3api.Client(aiohttp.ClientSession()) as ic:
-    ### Do stuff
+    # Do stuff
 ```
 With the `ic` instance you can then interact with the API:
 ```py
@@ -35,4 +35,4 @@ async with tl3api.Client(aiohttp.ClientSession()) as ic:
 ```
 
 ## License
-tl3api is provided under the (MIT)[https://opensource.org/licenses/MIT] license. For more details view the LICENSE file.
+tl3api is provided under the [MIT](https://opensource.org/licenses/MIT) license. For more details view the LICENSE file.
