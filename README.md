@@ -5,7 +5,7 @@ A basic, asynchronous wrapper for the API of Traffic Lanes 3 / Intersection Cont
 
 ## Installation
 
-tl3api was tested on python 3.9, although it should work wither earlier versions too. The recommended and easiest way to install tl3api is [pip](https://pypi.org/project/pip/)
+tl3api was tested on python 3.9, although it should work wither earlier versions too. The recommended and easiest way to install tl3api is [pip](https://pypi.org/project/pip/).
 ```sh
 pip install tl3api
 ```
