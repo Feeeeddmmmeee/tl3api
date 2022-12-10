@@ -1,5 +1,6 @@
 # tl3api
 ![PyPI](https://img.shields.io/pypi/v/tl3api) ![PyPI - Python Version](https://img.shields.io/pypi/pyversions/tl3api) ![PyPI - Downloads](https://img.shields.io/pypi/dm/tl3api) ![PyPI - License](https://img.shields.io/pypi/l/tl3api)
+
 A basic, asynchronous wrapper for the API of Traffic Lanes 3 / Intersection Controller written in Python.
 
 ## Installation
