@@ -19,5 +19,6 @@ setup(
     description="An asynchronous API wrapper for the Traffic Lanes 3 / Intersection Controller API.",
     long_description=open("README.md").read(),
     long_description_content_type="text/markdown",
-    keywords="api, ic, tl3, wrapper, async"
+    keywords="api, ic, tl3, wrapper, async",
+    requires=["aiohttp"]
 )
