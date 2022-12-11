@@ -100,6 +100,9 @@ class Map(ICObjectBase):
         """Return :class:`.Comment`s under this :class:`.Map`."""
         return await self._client.list_comments_on_map(map_id=self.object_id, limit=limit, before=before)
 
-    async def get_high_scores(self, count: int) -> List["HighScore"]:
+    async def get_high_scores(
+        self, 
+        count: int
+    ) -> List["HighScore"]:
         """Return :class:`.HighScore`s under this :class:`.Map`"""
         return await self._client.list_high_scores_on_map(map_id=self.object_id, count=count)

@@ -28,7 +28,10 @@ class Client:
         """Close the aiohttp :class:`ClientSession`."""
         await self._session.close()
 
-    async def get_details_for_user(self, user_id: int) -> Optional[User]:
+    async def get_details_for_user(
+        self, 
+        user_id: int
+    ) -> Optional[User]:
         """Create a :class:`.User` instance from its ID.
         
         :param user_id: The :class:`.User`'s ID.
@@ -59,11 +62,17 @@ class Client:
         users = [await self.get_details_for_user(User(self, user).object_id) for user in users]
         return users
 
-    def get_map_thumbnail_url(self, map_id: int) -> str:
+    def get_map_thumbnail_url(
+        self, 
+        map_id: int
+    ) -> str:
         """Returns the thumbnail url for a :class:`.Map`."""
         return f"https://tl3.shadowtree-software.se/TL3BackEnd/rest/map/public/{map_id}/thumb"
 
-    async def get_map_details(self, map_id: int) -> Optional[Map]:
+    async def get_map_details(
+        self, 
+        map_id: int
+    ) -> Optional[Map]:
         """Create a :class:`.Map` instance from its ID.
         
         :param map_id: The :class:`.Map`'s ID.
