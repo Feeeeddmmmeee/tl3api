@@ -25,6 +25,7 @@ class Client:
         await self.close()
 
     async def close(self):
+        """Close the aiohttp :class:`ClientSession`."""
         await self._session.close()
 
     async def get_details_for_user(self, user_id: int) -> Optional[User]:

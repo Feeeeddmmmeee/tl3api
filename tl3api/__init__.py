@@ -13,6 +13,6 @@ from tl3api.map import Map
 from tl3api.user import User
 from tl3api.wrapper import Client
 
-__version__ = "1.0.0"
+__version__ = "1.2.0"
 
 __all__ = ["Comment", "HighScore", "Map", "User", "Client"]
